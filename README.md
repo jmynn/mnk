@@ -20,16 +20,16 @@
 🤗 Сайт можно посмотреть здесь --> https://spa-mnk.web.app/
 
 😊 Посмотреть другие мои работы можно здесь:
-   ☂️https://jmynn.github.io/locus/
-   ☂️https://jmynn.github.io/britlex/
-   ☂️https://jmynn.github.io/kann/
-   ☂️https://jmynn.github.io/Schillings/
-   ☂️https://jmynn.github.io/taster/
-   ☂️https://jmynn.github.io/roger-tatooer/
-   ☂️https://jmynn.github.io/yebolanding/
-   ☂️https://jmynn.github.io/doo/
-   ☂️https://jmynn.github.io/melanish/
-   ☂️https://jmynn.github.io/Farmnet/ (редизайн)
+   ☂️https://jmynn.github.io/locus/ <br>
+   ☂️https://jmynn.github.io/britlex/ <br>
+   ☂️https://jmynn.github.io/kann/ <br>
+   ☂️https://jmynn.github.io/Schillings/ <br>
+   ☂️https://jmynn.github.io/taster/ <br>
+   ☂️https://jmynn.github.io/roger-tatooer/ <br>
+   ☂️https://jmynn.github.io/yebolanding/ <br>
+   ☂️https://jmynn.github.io/doo/ <br>
+   ☂️https://jmynn.github.io/melanish/ <br>
+   ☂️https://jmynn.github.io/Farmnet/ (редизайн) <br>
   
 
 Верю в силу розового🌸
