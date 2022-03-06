@@ -1,0 +1,417 @@
+//?------------functions and mixins----------
+@mixin headerHeight($pixels) {
+	.header{height: #{$pixels + 'px'};}
+	.fullscreen{height: calc(100vh - #{$pixels + 'px'});}
+}
+//?------------------------------------------
+/*//! ---------!!--MEDIA--!!--------- */
+@media (max-width: 1440px){
+    //?style.scss
+    .text__card{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .author__title{font-size: 35px;}
+    .author__text{flex: 1 1 50%;}
+    .author__image{flex: 1 1 50%;}
+    .history-gallery, .history-museum, .history-old{
+        &__text{
+            font-size: 16px;
+            line-height: 30px;
+        }
+        &__title{font-size: 35px;}
+    }
+    .exhibit-block__column{
+        &:first-child{flex: 0 0 30%;}
+        &:last-child{flex: 0 0 70%;}
+    }
+    .exhibit-block__text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    //?header.scss
+    @include headerHeight(100);
+    .header__logo img{max-width: 12%;}
+
+    //? main.scss
+    .column-card__body{padding: 20px;}
+    .column-card__text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .column-card__title{font-size: 22px;}
+    .button-big{font-size: 14px;}
+    .column-collection__title{font-size: 14px;}
+    .collection__title{font-size: 35px;}
+    .column-collection{padding: 0 20px;}
+    .history__title{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .history__text{line-height: 30px;}
+    .history__column:first-child{padding: 80px 20px;}
+
+    //? visitors.scss
+    .visitors{max-width: 90%;}
+
+    //? national.scss
+    .national__img{flex: 0 1 50%;}
+    .national__text{flex: 0 1 50%;}
+    .national__title{font-size: 35px;}
+    
+    //? rembrandt-vinchi
+    .rembrandt, .woman{
+        .picture__image img{max-width: 70%;}
+        .picture__image-2 img{max-width: 90%;}
+    }
+
+    //? lotto.scss
+    .lotto__image-2 img{max-width: 70%;}
+
+    //? gallery.scss
+    .gallery > .exhibit-block__right:last-child > .exhibit-block__row > .exhibit-block__column{
+        &:first-child{flex: 0 0 40%;}
+        &:last-child{flex: 0 0 60%;}
+    }
+    .gallery > .exhibit-block__right:not(:last-child) > .exhibit-block__row > .exhibit-block__column{
+        &:first-child{flex: 0 0 25%;}
+        &:last-child{flex: 0 0 75%;}
+    }
+    .gallery > .exhibit-block:first-child > .exhibit-block__row {
+        .exhibit-block__column:first-child{flex: 0 0 25%;}
+        .exhibit-block__column:last-child{flex: 0 0 75%;}
+    }
+
+    //? footer.scss
+    .footer__column{font-size: 16px;}
+}
+@media (max-width: 991px){
+    //? style.scss
+    .author__title{font-size: 32px;}
+    .author__card{flex-direction: column;}
+    .author__image{
+        padding-bottom: 80%;
+        margin-left: 0;
+    }
+    .author__text{
+        flex: none;
+        margin-bottom: 20px;
+    }
+    .history-gallery, .history-museum, .history-old{
+        &__title{font-size: 30px;}
+        &__text{flex: 0 0 60%;}
+        &__image{flex: 0 0 40%;}
+    }
+    .exhibit-block__row{flex-direction: column;}
+    .exhibit-block__column{
+        &:first-child{flex: none;}
+        &:last-child{flex: none;}
+    }
+    .exhibit-block__left{padding: 0 20px 40px;}
+    .exhibit-block__right{
+        padding: 0 20px 40px;
+        .exhibit-block__column:first-child{order:1;}
+        .exhibit-block__column:last-child{order:2;}
+    }
+    .exhibit-block__image {
+        display: flex;
+        justify-content: center;
+        img{max-width: 50%;}
+    }
+    .exhibit-block__title{font-size: 22px;}
+    .exhibit-block__subtitle{font-size: 16px;}
+    .picture__author{font-size: 16px;}
+    .lotto__image-2, .woman__image-2, .rembrandt__image-2{
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .lotto__image-2{margin-left: -60px;}
+    .rembrandt__image-2{margin-left: -30px;}
+
+    //? header.scss
+    .header__row{padding: 10px 40px;}
+
+    //? main.scss
+    .button{margin-top: 15px;font-size: 13px;}
+    .column-collection{padding: 0 10px;}
+    .fullscreen__text{font-size: 16px;}
+    .fullscreen__title{font-size: 35px;}
+    .history__text{font-size: 14px;}
+    .history__title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .history__column:first-child{flex: 0 0 40%;}
+    .history__column:last-child{flex: 0 0 60%;}
+    .gallery__column:nth-child(odd){flex: 0 0 25%;}
+    .gallery__column:nth-child(even){flex: 0 0 50%;}
+    .museum__row{flex-direction: column;}
+    .museum__column:first-child{flex: none; padding-bottom: 35%;}
+    .old__column:first-child, .old__column:last-child{flex: 0 0 50%;}
+
+    //? lotto.scss
+    .lotto__image img{max-width: 50%;}
+
+    //? footer.scss
+    .footer__column{font-size: 14px;}
+    .footer__logo img{max-width: 14%;}
+}
+@media (max-width: 767px){
+    //? main.scss
+    .fullscreen__body{max-width: 80%;}
+    .history__row{flex-direction: column;}
+    .history__column{
+        &:first-child{order: 2; }
+        &:last-child{
+            order: 1;
+            padding-bottom: 50%;
+        }
+    }
+    .gallery__row{flex-direction: column;}
+    .gallery__column.ibg{padding-bottom: 50%;}
+    .museum__column{
+        &:first-child{
+            order: 2;
+            padding-bottom: 50%;
+        }
+        &:last-child{order: 1;}
+    }
+    .old__row{flex-direction: column;}
+    .old__column{
+        &:first-child{
+            order: 2;
+            padding-bottom: 50%;
+        }
+        &:last-child{order: 1;}
+    }
+    .author__body{margin: 0;}
+    .column-collection__button{width: 45%;}
+
+    //? national.scss
+    .national__card{flex-direction: column;}
+    .national__img{
+        padding-bottom: 50%;
+        margin: 0 0 30px 0;
+    }
+    .national__title{font-size: 30px;}
+
+    //? filials.scss
+    .block__title, .block__subtitle{font-size: 30px;}
+    .body-block{
+        flex-direction: column;
+        &__info, &__map{flex: none;}
+        &__map{height: 30vh;}
+    }
+    .info-block{
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    //? visitors.scss
+    .info-visitors{font-size: 16px;}
+    .work-visitors__info{font-size: 16px;}
+    .tab__title{font-size: 16px;}
+    .tab__info, .tab__cost{font-size: 14px;}
+    .tabs-nav__item{padding: 10px 20px;}
+    .tab{padding: 20px;}
+    .vehicle-visitors__title, .vehicle-visitors__subtitle{font-size: 18px;}
+    .vehicle-visitors__vehicle{font-size: 16px;}
+    .visitors__image {
+        text-align: center;
+        img{max-width: 80%;}
+    }
+
+    //? header.scss
+    @include headerHeight(80);
+    /*-----!!---ТЕХНИЧЕСКИЕ СТИЛИ---!!-----*/
+	.menu {
+        //* активация кнопки-меню при медиа-запросе
+		display: block;
+	}
+	.column-header {
+		display: flex;
+		transition: all 0.8s ease;
+        //* исходное положение меню(при закрытом состоянии)
+		// transform: translateY(-200vh);
+		transform: translateX(-200vw);
+		background-color: $d-green;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+        // * ширина и высота блока-меню
+		width: 100vw;
+		height: 100vh;
+	}
+	.column-header__body {
+		overflow-y: auto;
+        //* размер блока для пунктов меню
+		width: 50%;
+		height: 50%;
+        // выравнивание по центру
+		margin: auto;
+	}
+	.column-header__list {
+		flex-direction: column;
+        //* отступ пунктов меню от верха документа
+		transform: translateY(50%);
+		// border-left: 1px solid $d-gray;
+		li {
+			//* стилизация пунктов 
+			a{
+				color: $white;
+				font-size: 18px;
+				padding-right: 10px;
+			}
+			text-shadow: none;
+			// color: $d-gray;
+			margin-left: auto;
+			// @include fz-rem(30);
+			border-right: 1px solid $white;
+			&:last-child {
+				transition: none;
+				background-color: transparent;
+				padding: 0;
+				box-shadow: none;
+				font-weight: normal;
+				border-radius: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 10%;
+			}
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+	}
+	.column-header.active {
+        //* возвращение менюшки в положение блока при открытии(устанавливается относительно изначально установленного положения)
+		transform: translateX(0);
+	}
+	.menu.active {
+		span{background-color: $white;}
+        //* кнопочка меню при открытии(крестик)
+		z-index: 2;
+		span:first-child {
+			top: 20px;
+			transform: rotate(40deg);
+		}
+		span:nth-child(2) {
+			display: none;
+		}
+		span:last-child {
+			bottom: 20px;
+			transform: rotate(-40deg);
+		}
+        //* отступ крестика сверху
+		transform: translateY(5px);
+	}
+	body.active {
+        //* отмена прокрутки документа. при необходимости(при высчитывании скролла здесь можно дать флекс)
+		overflow-y: hidden;
+        // display: flex;
+	}
+	//------------------------
+    .header__row {
+		padding: 10px 20px;
+	}
+    /*-----!!---ТЕХНИЧЕСКИЕ СТИЛИ---!!-----*/
+
+    //? footer.scss
+    .footer__column{font-size: 12px;}
+    .footer__num{padding-bottom: 0;}
+}
+@media (max-width: 650px){
+    //? main.scss
+    .collection__row{flex-direction: column;}
+    .column-collection{padding: 0 30px;}
+    .column-collection:not(:last-child){padding-bottom: 30px;}
+    .column-collection__image{padding-bottom: 120%;}
+    .picture__author{text-align: center;}
+    .author__title{font-size: 30px;}
+    .author__card{
+        .author__text{order: 2;}
+        .author__image{
+            order: 1;
+            margin-bottom: 20px;
+        }
+    }
+    .picture{padding: 0 10px;}
+
+    //?rembrandt.scss
+    .rembrandt{
+        .rembrandt__image-2{
+            justify-content: center;
+            margin-left: 0;
+            img{max-width: 70%;}
+        }
+        .picture__image img{max-width: 100%;}
+    }
+
+    //? woman.scss
+    .woman__text{margin-bottom: 20px;}
+
+    //? lotto.scss
+    .lotto__image img{max-width: 90%;}
+    .lotto .author__image{padding-bottom: 100%;}
+
+    //? gallery.scss
+    .history-gallery, .history-museum, .history-old{
+        &__body{flex-direction: column;}
+        &__image{
+            padding-bottom: 50%;
+            order: 1;
+            margin-bottom: 20px;
+        }
+        &__text{order: 2;}
+        &__title{font-size: 25px;}
+    }
+    .exhibit-block__image img{ max-width: 95%;}
+    .exhibit-block__body{padding: 20px 0;}
+    .exhibit-block__subtitle{font-size: 14px;}
+    .exhibit-block__left, .exhibit-block__right{padding: 0 10px 30px;}
+
+    //? footer.scss
+    .footer__logo img{max-width: 20%;}
+}
+@media (max-width: 480px){
+    //? header.scss
+    @include headerHeight(70);
+    .header__row{padding: 10px 20px;}
+
+    //? visitors.scss
+
+    .tab__info, .tab__cost, .tab__title{font-size: 14px;}
+    .tabs-nav__item{
+        padding:10px 5px;
+        font-size: 12px;
+    }
+    .visitors__image img{max-width: 100%;}
+}
+@media (pointer:coarse) and (orientation: landscape) and (min-width: 768px){
+    //? header.scss
+    // .column-header__list{transform: translateX(0);}
+	@include headerHeight(80);
+
+    //? main.scss
+    .fullscreen{height: auto;}
+    .fullscreen__title{font-size: 30px;}
+    .fullscreen__text{line-height: 24px;}
+    .scroll-icon{margin: 20px 0;}
+    .column-collection__button{width: 45%;}
+
+    //? woman.scss
+    .woman{
+        .author__body{margin-top: 0;}
+        .woman__text{margin-bottom: 20px;}
+    }
+    //? national.scss
+    .national__card{flex-direction: column;}
+    .national__img{
+        padding-bottom: 50%;
+        margin: 0 0 30px 0;
+    }
+    .national__title{font-size: 30px;}
+}

@@ -1,0 +1,10 @@
+.museum {
+    .exhibit-block {
+        // .exhibit-block__column
+        &__column {
+            &:first-child{flex: 0 0 20%;}
+            &:last-child{flex: 0 0 80%;}
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+.national {
+    margin-bottom: 30px;
+    text-align: center;
+    // .national__body
+    &__body {
+        padding: 20px;
+    }
+    // .national__title
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 36px;
+        color: $gold;
+        margin-bottom: 30px;
+    }
+    // .national__card
+    &__card {
+        display: flex;
+    }
+    // .national__img
+    &__img {
+        flex: 0 1 33.333%;
+        margin: 0 20px 20px 0;
+    }
+    // .national__text
+    &__text {
+        flex: 0 1 66.667%;
+    }
+    // .national__btn
+    &__btn {
+    }
+}

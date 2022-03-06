@@ -1,0 +1,37 @@
+.footer {
+    padding: 20px 0;
+    background-color: #d1dfd8;
+    &__row {
+        display: flex;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__column {
+        text-align: center;
+        flex: 0 0 33.333%;
+        img{
+            max-width: 10%;
+        }
+        font-size: 20px;
+        line-height: 18px;
+        margin: auto 0;
+    }
+
+    &__num {
+        a{
+            color: #544b3d;
+            font-weight: 600;
+        }
+        padding-bottom: 10px;
+    }
+
+    &__address {
+        span{
+            font-weight: 600;
+        }
+    }
+    &__logo{
+        &> div{pointer-events: none;}
+    }
+}

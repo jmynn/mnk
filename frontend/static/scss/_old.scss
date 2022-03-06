@@ -1,0 +1,34 @@
+.old {
+    .exhibit-block {
+        // .exhibit-block__left
+        &__left {
+        }
+        // .exhibit-block__row
+        &__row {
+        }
+        // .exhibit-block__column
+        &__column {
+            &:first-child{flex: 0 0 20%;}
+            &:last-child{flex: 0 0 80%;}
+        }
+        // .exhibit-block__image
+        &__image {
+        }
+        // .exhibit-block__body
+        &__body {
+        }
+        // .exhibit-block__title
+        &__title {
+        }
+        // .exhibit-block__subtitle
+        &__subtitle {
+        }
+        // .exhibit-block__text
+        &__text {
+        }
+        // .exhibit-block__right
+        &__right {
+        }
+    }
+}
+

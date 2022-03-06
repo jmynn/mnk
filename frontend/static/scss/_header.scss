@@ -1,0 +1,108 @@
+//переменные
+$gold: #a89127;
+$white: #e0f2e9;
+$l-green: #a8c69f;
+$d-green: #4e6e58;
+$brown: #544b3d;
+//------------
+a{
+    color: #544b3d;
+}
+//?------------functions and mixins----------
+@mixin headerHeight($pixels) {
+	.header{height: #{$pixels + 'px'};}
+	.fullscreen{height: calc(100vh - #{$pixels + 'px'});}
+}
+//?------------------------------------------
+@include headerHeight(120);
+//?------------------------------------------
+.header {
+	margin-bottom: 15px;
+	//* фон хэдера, тени
+	height: 100%;
+	// .header__row
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+        //* стилизация по макету
+		padding: 10px 100px;
+		transition: transform ease 0.01s;
+		// position: relative;
+	}
+	// .header__column
+	&__column {
+        //? возможно, что это не требуется
+        &:first-child{margin: auto 0;}
+	}
+	// .header__logo
+	&__logo {
+        //*стили для текстового логотипа
+        img{max-width: 15%;}
+		&>div{pointer-events: none;}
+	}
+}
+.column-header {
+	// .column-header__body
+	&__body {
+	}
+	// .column-header__list
+	&__list {
+        //*стилизация списка
+		display: flex;
+		align-items: center;
+		li {
+            font-size: 14px;
+			line-height: 100%;
+			letter-spacing: 0.663px;
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+			&:last-child {
+                background-color: #a8c69f;
+                box-shadow: 0px 1px 6px #544b3d;
+                border-radius: 21px;
+                padding: 10px 15px;
+                font-weight: 600;
+                transition: all 0.8s ease;
+			}
+			&:hover {
+				cursor: pointer;
+				font-weight: 500;
+				&:last-child {
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}
+.menu {
+    //* кнопка менюшки
+	width: 80px;
+	height: 40px;
+	// в обычном состоянии скрыта кнопка меню
+	display: none;
+	position: relative;
+	span {
+        position: absolute;
+		z-index: 2;
+        //* стилизация кнопочки
+		width: 100%;
+		height: 1px;
+		background-color: $d-green;
+		transition: all ease 0.3s, background-color ease 1.3s;
+        //* по макету отступы 
+		&:first-child {
+			top: 10px;
+		}
+		&:nth-child(2) {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			bottom: 10px;
+		}
+	}
+}
+/* --------------- */
+

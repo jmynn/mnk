@@ -1,0 +1,149 @@
+// --------переменные--------
+$gold: #a89127;
+$white: #e0f2e9;
+$l-green: #a8c69f;
+$d-green: #4e6e58;
+$brown: #544b3d;
+// --------------------------
+.tabs-nav {
+	display: flex;
+	justify-content: space-between;
+}
+.tabs-nav__item {
+    background-color: $d-green;
+	cursor: pointer;
+	flex: 1;
+	padding: 20px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.tabs-nav__item.active {
+	background-color: $l-green;
+    color: $brown;
+}
+.tab {
+    background-color: $l-green;
+	display: none;
+	padding: 40px;
+	// .tab__body
+	&__body {
+	}
+	// .tab__title
+	&__title {
+        color: $d-green;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 20px;
+		line-height: 21px;
+	}
+	// .tab__info
+	&__info {
+        line-height: 21px;
+        font-size: 16px;
+        margin-bottom: 10px;
+	}
+	// .tab__cost
+	&__cost {
+        padding-left: 15px;
+        font-size: 16px;
+        margin-bottom: 15px;
+		line-height: 21px;
+        li:not(:last-child){margin-bottom: 10px;}
+        li{span{font-weight: bold;}}
+	}
+}
+.tab.active {display: block;}
+
+
+/* ---------!!--visitors--!!--------- */
+.visitors {
+	max-width: 70%;
+	margin: 0 auto;
+	// .visitors__body
+	&__body {
+        margin-bottom: 30px;
+	}
+	// .visitors__image
+	&__image {
+		img {
+			max-width: 100%;
+		}
+		margin-bottom: 30px;
+	}
+	// .visitors__info
+	&__info {
+	}
+	// .visitors__border
+	&__border {
+		margin: 0 auto 30px auto;
+		width: 50px;
+		height: 1px;
+		background-color: $gold;
+	}
+	// .visitors__vehicle
+	&__vehicle {
+	}
+	// .visitors__work
+	&__work {
+	}
+}
+.info-visitors {
+	text-align: center;
+	font-size: 18px;
+	// .info-visitors__title
+	&__title {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	// .info-visitors__phone
+	&__phone {
+		font-weight: 600;
+		margin-bottom: 10px;
+		text-decoration: underline;
+	}
+	// .info-visitors__mail
+	&__mail {
+		margin-bottom: 10px;
+		color: $d-green;
+	}
+}
+.work-visitors {
+	// .work-visitors__info
+	&__info {
+		white-space: pre-line;
+		text-align: center;
+		font-size: 18px;
+		line-height: 24px;
+		span {
+			font-weight: bold;
+		}
+	}
+}
+.visitors-tabs {
+	margin-bottom: 30px;
+}
+.vehicle-visitors {
+	// .vehicle-visitors__title
+	&__title {
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 24px;
+	}
+	// .vehicle-visitors__subtitle
+	&__subtitle {
+		font-size: 22px;
+		line-height: 24px;
+		font-weight: bold;
+	}
+	// .vehicle-visitors__vehicle
+	&__vehicle {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+}
