@@ -1,0 +1,1 @@
+document.querySelector('.popup').children[1].onclick = () => document.body.removeChild(document.querySelector('.popup'))

@@ -217,6 +217,34 @@ q{
     justify-content: center;
     color: $brown;
 }
+.popup{
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    display: inline-block;
+    width: 300px;
+    z-index: 2;
+    img{max-width: 95%; z-index: 1;}
+    span{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        &:hover{cursor: pointer;}
+        &::before, &::after{
+            height: 1.5px;
+            width: 100%;
+            background-color: $brown;
+            content: '';
+            position: absolute;
+            top: 0;
+        }
+        &::before{transform: rotate(-40deg);}
+        &::after{transform: rotate(40deg);}
+    }
+}
 /* ---------!!--BODY--!!--------- */
 body{
 	// font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
