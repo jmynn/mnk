@@ -1,13 +1,18 @@
 export function ErrorPage(){
-    return `<h1>ERROR</h1>`
+    return `
+    <div class="error">
+        ERROR
+        PAGE NOT FOUND
+    </div>
+    `
 }
 export function Filials() {
     return `
-        <div class="national-block block">
+    <div class="national-block block">
         <div class="block__title">Главное здание Национального музея</div>
         <div class="block__row">
             <div class="block__column ">
-                <div class="block__image"><img src="static/img/filial/national_main.webp" alt=""></div>
+                <div class="block__image"><img src="static/img/1x1.png" data-src="static/img/filial/national_main.webp" alt=""></div>
             </div>
             <div class="block__column">
                 <div class="block__subtitle">информация</div>
@@ -38,7 +43,7 @@ export function Filials() {
         <div class="block__row">
             <div class="block__column">
                 <div class="block__title">Музей Чарторыйских</div>
-                <div class="block__image"><img src="static/img/filial/chart_main.webp" alt=""></div>
+                <div class="block__image"><img src="static/img/1x1.png" data-src="static/img/filial/chart_main.webp" alt=""></div>
             </div>
             <div class="block__column">
                 <div class="block__subtitle">информация</div>
@@ -69,7 +74,7 @@ export function Filials() {
         <div class="block__row">
             <div class="block__column">
                 <div class="block__title">Сукконные ряды</div>
-                <div class="block__image"><img src="static/img/filial/sukkonie_main.webp" alt=""></div>
+                <div class="block__image"><img src="static/img/1x1.png" data-src="static/img/filial/sukkonie_main.webp" alt=""></div>
             </div>
             <div class="block__column">
                 <div class="block__subtitle">информация</div>
@@ -100,7 +105,7 @@ export function Filials() {
         <div class="block__row">
             <div class="block__column">
                 <div class="block__title">Дворец епископа Эразма Циолка</div>
-                <div class="block__image"><img src="static/img/filial/ciolka_main.webp" alt=""></div>
+                <div class="block__image"><img src="static/img/1x1.png" data-src="static/img/filial/ciolka_main.webp" alt=""></div>
             </div>
             <div class="block__column">
                 <div class="block__subtitle">информация</div>
@@ -127,7 +132,7 @@ export function Filials() {
             </div>
         </div>
     </div>
-        `
+    `
 }
 export function Gallery(){
     return `
@@ -142,7 +147,7 @@ export function Gallery(){
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/gallery/senko.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/gallery/senko.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -166,7 +171,7 @@ export function Gallery(){
     <div class="exhibit-block exhibit-block__right">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/gallery/girl.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/gallery/girl.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -190,7 +195,7 @@ export function Gallery(){
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/gallery/exs.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/gallery/exs.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -220,7 +225,7 @@ export function Gallery(){
     <div class="exhibit-block exhibit-block__right">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/gallery/hair.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/gallery/hair.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -244,18 +249,18 @@ export function Gallery(){
             </div>
         </div>
     </div>
-</div>
+    </div>
     `
 }
 export function Lotto() {
     return `
-        <div class="lotto picture">
+    <div class="lotto picture">
         <div class="lotto__body picture__body">
-            <div class="lotto__image picture__image"><img src="static/img/lotto/lotto.webp" alt=""></div>
+            <div class="lotto__image picture__image"><img data-src="static/img/lotto/lotto.webp" src="static/img/1x1.png" alt="lotto"></div>
             <div class="picture__author"><cite>Поклонение младенцу Христу.</cite> Лоренцо Лотто. 1508г.</div>
             <div class="lotto__text picture__text text">
                 <div class="text__card FLU">Слева от Мадонны с младенцем стоит Франциск Ассизский , в центре на заднем плане - престарелый святой (святой Иероним или святой Иосиф), а справа - мученица, возможно Екатерина Александрийская</div>
-                <div class="text__card">В 17 веке она находилась в коллекции Гаспара де Аро-и-Гусмана (1629–1687), посла Испании. <div class="lotto__image-2 picture__image-2"><img src="static/img/lotto/lotto_2.webp" alt=""></div>Риму и вице-королю Неаполя, одному из величайших коллекционеров того времени, о чем свидетельствует его марка на реверсе изображения. В 1804 году он был куплен в Неаполе за 100 дукатов Яном Феликсом Тарновским, который в 1834 году подарил его Янови Каролови Сципио дель Кампо, его племянник и каноник капитула Кракова.</div>
+                <div class="text__card">В 17 веке она находилась в коллекции Гаспара де Аро-и-Гусмана (1629–1687), посла Испании. <div class="lotto__image-2 picture__image-2"><img src="static/img/1x1.png" data-src="static/img/lotto/lotto_2.webp" alt=""></div>Риму и вице-королю Неаполя, одному из величайших коллекционеров того времени, о чем свидетельствует его марка на реверсе изображения. В 1804 году он был куплен в Неаполе за 100 дукатов Яном Феликсом Тарновским, который в 1834 году подарил его Янови Каролови Сципио дель Кампо, его племянник и каноник капитула Кракова.</div>
                 <div class="text__card">Он был включен в монографию Бернарда Беренсона 1901 года о художнике. Он был куплен Зигмунтом Пусловским в начале 20-го века, и его следующим владельцем после него был Ксаверий Пусловски, который позже передал его своему крестному отцу Маркови Ростворовскому. Он был продан Ростворовским в 1971 году его нынешнему владельцу.</div>
             </div>
         </div>
@@ -268,7 +273,7 @@ export function Lotto() {
                     <div class="text__card">Лотто покинул родной город молодым художником. Вероятно, это произошло из-за большой конкуренции со стороны других начинающих художников, таких как Джорджоне, Тициан и Пальма Старшая. Между 1503 и 1525 годами Лотто жил и работал в Тревизо, Реканти, Риме, регионе Марке и Бергамо. Затем он вернулся в Венецию на несколько лет, где сначала жил в доминиканском монастыре Санти-Джованни-э-Паоло. Но всего через несколько месяцев ему снова пришлось покинуть монастырь из-за ожесточенного спора с художницей госпожой Дамиано да Бергамо. Lotto получила много прибыльных контрактов в Венеции, потому что город был чрезвычайно богат. Хотя Лотто был занят бизнесом, он не соответствовал популярности и репутации Тициана, который в то время был доминирующим художником в городе. Стиль Тициана коснулся и Лотто, который, как этот, стал рисовать яркими красками. Но Lotto сохранила свой оттенок мощной демонстрации эмоций. Его произведения становились все более повествовательными и драматичными, как в <q>Благовещении</q> или <q>Мадонне на троне с четырьмя святыми</q>.</div>
                     <div class="text__card">Карьера и творчество Лото - отражение его личности. Его считали очень нервным, энергичным и беспокойным человеком. Ему было трудно оставаться на одном месте в течение длительного периода времени или иметь долгосрочные отношения. Когда одна из его картин не могла быть продана на аукционе в 1550 году, Лотто, как говорят, был глубоко встревожен и разочарован. Он все реже и реже продавал картины, что доставляло ему финансовые проблемы. Чтобы обеспечить себе средства к существованию, он брался за простые задания, которые, вероятно, не подвергали сомнению навыки художника. Например, ему приходилось рисовать числа на больничных койках. Когда его зрение начало ухудшаться, глубоко религиозный Лото вошел в Базилику Санта-Каса в Лорето как мирянин. Свою последнюю работу там, <q>Представление в храме</q>, он не смог закончить до своей смерти.</div>
                     </div>
-                <div class="author__image ibg"><img src="static/img/lotto/author.webp" alt=""></div>
+                <div class="author__image ibg"><img src="static/img/1x1.png" data-src="static/img/lotto/author.webp" alt=""></div>
             </div>
         </div>
     </div>
@@ -302,21 +307,21 @@ export function Main() {
         <div class="collection__row">
             <div class="collection__column column-collection">
                 <div class="column-collection__body">
-                    <div class="column-collection__image"><img src="static/img/rembrandt.webp" alt="photo collection"></div>
+                    <div class="column-collection__image"><img src="static/img/1x1.png" data-src="static/img/rembrandt.webp" alt="photo collection"></div>
                     <div class="column-collection__title"><span>Пейзаж с милосердным самаритянином.</span> Рембрандт Харменс Ван Рейн, 1638г.</div>
                 </div>
                 <a href="/rembrandt" data-link class="column-collection__button button">Подробнее</a>
             </div>
             <div class="collection__column column-collection">
                 <div class="column-collection__body">
-                    <div class="column-collection__image"><img src="static/img/da-vinchi.webp" alt="photo collection"></div>
+                    <div class="column-collection__image"><img src="static/img/1x1.png" data-src="static/img/da-vinchi.webp" alt="photo collection"></div>
                     <div class="column-collection__title"><span>Дама с горностаем.</span> Леонардо да Винчи, около 1490г. </div>
                 </div>
                 <a href="/woman" data-link class="column-collection__button button">Подробнее</a>
             </div>
             <div class="collection__column column-collection">
                 <div class="column-collection__body">
-                    <div class="column-collection__image"><img src="static/img/lotto.webp" alt="photo collection"></div>
+                    <div class="column-collection__image"><img src="static/img/1x1.png" data-src="static/img/lotto.webp" alt="photo collection"></div>
                     <div class="column-collection__title"><span>Поклонение Младенцу Христу.</span>Лоренцо Лотто, около 1508г.</div>
                 </div>
                 <a href="/lotto" data-link class="column-collection__button button">Подробнее</a>
@@ -377,7 +382,7 @@ export function Main() {
             </div>
         </div>
     </div>
-        `
+    `
 }
 export function Museum() {
     return `
@@ -392,7 +397,7 @@ export function Museum() {
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/chartoriickih/vaza.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/chartoriickih/vaza.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -416,7 +421,7 @@ export function Museum() {
     <div class="exhibit-block exhibit-block__right">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/chartoriickih/udif.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/chartoriickih/udif.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -440,7 +445,7 @@ export function Museum() {
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/chartoriickih/woman.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/chartoriickih/woman.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -461,13 +466,13 @@ export function Museum() {
             </div>
         </div>
     </div>
-</div>
+    </div>
     `
 }
 export function National(){
     return `
-        <div class="national">
-        <div class="national__body">
+    <div class="national">
+    <div class="national__body">
             <div class="national__title">История создания и развития Национального музея</div>
             <div class="national__card">
                 <div class="national__img ibg"><img src="static/img/national/national.webp" alt=""></div>
@@ -480,10 +485,10 @@ export function National(){
             </div>
             <div class="text__card">Во дворце Бискупа Эразм Чолек, на улице Канонича, 17, есть две постоянные галереи, представляющие коллекции NMK. На первом этаже - галерея <q>Искусство старой Польши. XII - XVIII века</q> , где можно увидеть произведения польского средневековья, ренессанса и барокко. На первом этаже - галерея <q>Православное искусство Старой Республики</q>. В отреставрированных подвалах вы можете полюбоваться 800 фрагментами самых ценных архитектурных скульптур со всей Польши, в том числе из от церкви Святой Марии, Краковского собора или Гнезненского собора - в рамках проекта «Краков на кончиках пальцев. Архитектурная скульптура из собрания Национального музея в Кракове» .</div>
             <div class="text__card">Национальный музей в Кракове владеет бесценной коллекцией в 100 000 экземпляров, в том числе лучшей коллекцией польских монет в мире. Его ядро ​​составляет более 11 000 экземпляров знаменитого нумизмата и коллекционера исторических памятных вещей графа Эмерика Хуттен-Чапского (1828–1896). Коллекция вместе со зданием музея была передана в дар Национальному музею в Кракове. Так Музей Эмерик Хаттен-Чапски, который находится по адресу: ул. Пилсудского, 10-12. В 2016 году в этом комплексе был построен павильон Юзефа Чапского - новый музей, посвященный внуку Эмерика, выдающемуся живописцу, писателю и свидетелю Катыни.</div>
-        </div>
-        <div class="national__btn"><a href="/visitors" data-link class="button">Купить билет</a></div>
     </div>
-        `
+    <div class="national__btn"><a href="/visitors" data-link class="button">Купить билет</a></div>
+    </div>
+    `
 }
 export function Old() {
     return `
@@ -498,7 +503,7 @@ export function Old() {
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/old/madonna.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/old/madonna.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -522,7 +527,7 @@ export function Old() {
     <div class="exhibit-block exhibit-block__right">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/old/stvosh.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/old/stvosh.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -546,7 +551,7 @@ export function Old() {
     <div class="exhibit-block exhibit-block__left">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/old/vitrazh.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/old/vitrazh.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -570,7 +575,7 @@ export function Old() {
     <div class="exhibit-block exhibit-block__right">
         <div class="exhibit-block__row">
             <div class="exhibit-block__column">
-                <div class="exhibit-block__image"><img src="static/img/old/st.anne.webp" alt=""></div>
+                <div class="exhibit-block__image"><img src="static/img/1x1.png" data-src="static/img/old/st.anne.webp" alt=""></div>
             </div>
             <div class="exhibit-block__column">
                 <div class="exhibit-block__body">
@@ -591,17 +596,17 @@ export function Old() {
             </div>
         </div>
     </div>
-</div>
+    </div>
     `
 }
 export function Rembrandt(){
     return `
     <div class="rembrandt picture">
     <div class="rembrandt__body picture__body">
-        <div class="rembrandt__image picture__image"><img src="static/img/rembrandt/rembrandt.webp" alt=""></div>
+        <div class="rembrandt__image picture__image"><img src="static/img/1x1.png" data-src="static/img/rembrandt/rembrandt.webp" alt=""></div>
         <div class="picture__author"><cite>Пейзаж с милосердным самаритянином.</cite> Рембрандт Харменс Ван Рейн. 1638г.</div>
         <div class="rembrandt_text picture__text text">
-            <div class="text__card FLU">Сохранилось лишь несколько пейзажей Рембрандта. Этот относится к библейской истории о самаритянине, который помог избитому и ограбленному путнику. Мимо раненого проходили люди, не оказывая ему помощи (священник и левит видны на картине). Только самаритянин привез страдающего в гостиницу и перевязал его рано. <div class="rembrandt__image-2 picture__image-2"><img src="static/img/rembrandt/rembrandt_2.webp" alt=""></div></div>
+            <div class="text__card FLU">Сохранилось лишь несколько пейзажей Рембрандта. Этот относится к библейской истории о самаритянине, который помог избитому и ограбленному путнику. Мимо раненого проходили люди, не оказывая ему помощи (священник и левит видны на картине). Только самаритянин привез страдающего в гостиницу и перевязал его рано. <div class="rembrandt__image-2 picture__image-2"><img src="static/img/1x1.png" data-src="static/img/rembrandt/rembrandt_2.webp" alt=""></div></div>
             <div class="text__card">Композиция состоит из различных элементов ландшафта, как родного (голландской равнины, ветряных мельниц, каменного моста), так и экзотического (горы, восточный город, пальма), что соответствовало традициям фламандской живописной пейзажной школы шестнадцатого века и большого Theatrum Mundi – театральной сцены, на которой разыгрывается вневременная драма. Природа как бы передает настроение содержание (глубину темного пасмурного неба рассекают яркие резкие лучи света), перекликаясь с главной темой картины и притчи: добро противостоит злу. Контраст достигается мощными темными мазками (небо, стена леса, густая листва деревьев), которые соседствуют с легкими и светлыми, словно горящими тонами (солнечная равнина, край неба). Создается впечатление объема: более плоский задний план и выступающий вперед, почти резной – передний (ветки дерева, человек на лошади).</div>
             <div class="text__card">Избитый мужчина сидит полуобнаженный на лошади, ведомой самаритянином.</div>
             <div class="text__card">Тяжелые тучи, сквозь которые пробивается солнце, символизируют зло, охватывающее мир. Лучи света означают добрые дела, подобные деянию милосердного самаритянина.</div>
@@ -621,14 +626,14 @@ export function Rembrandt(){
             <div class="author__image ibg"><img src="static/img/rembrandt/author.webp" alt=""></div>
         </div>
     </div>
-</div>
+    </div>
     `
 }
 export function Visitors() {
     return `
-        <div class="visitors">
+    <div class="visitors">
     <div class="visitors__body">
-        <div class="visitors__image"><img src="static/img/visitors/visitors.webp" alt=""></div>
+        <div class="visitors__image"><img src="static/img/1x1.png" data-src="static/img/visitors/visitors.webp" alt=""></div>
         <div class="visitors__info info-visitors">
             <div class="info-visitors__title">Центр информации и бронирования билетов</div>
             <a href="tel:+48 12 433 57 44"><div class="info-visitors__phone">+48 12 433 57 44</div></a>
@@ -700,21 +705,20 @@ export function Visitors() {
             <li>трамваи: 20 - остановка Национальный музей</li>
         </ul>
         <div class="vehicle-visitors__subtitle">ПАРКОВКА:</div>
-        <div class="vehicle-visitors__vehicle">Перед главным зданием находится платная подземная городская парковка.</div></div>
+        <div class="vehicle-visitors__vehicle">Перед главным зданием находится платная подземная городская парковка.</div>
     </div>
-</div>
-
-        `
+    </div>
+    `
 }
 export function Woman(){
     return `
-        <div class="woman picture">
+    <div class="woman picture">
         <div class="woman__body picture__body">
-            <div class="woman__image picture__image"><img src="static/img/woman/da-vinchi.webp" alt=""></div>
+            <div class="woman__image picture__image"><img src="static/img/1x1.png" data-src="static/img/woman/da-vinchi.webp" alt=""></div>
             <div class="picture__author"><cite>Дама с горностаем.</cite> Леонардо да Винчи. Около 1490г.</div>
             <div class="woman__text picture__text text">
                 <div class="text__card FLU">Это самое драгоценное произведение искусства в Польше. Большой портрет Чечилии Галлерани, придворной дамы герцога Милана Лодовико Сфорца (из-за темной кожи его прозвали Моро, итальянское <i>il Moro</i> - Мавр), ранее было принято считать изображением фаворитки французского короля Франциска I. Сначала Чечилия сделала придворную карьеру, а затем стала женой графа Бергамино и жила во дворце Карманьола. Там она в течение многих лет вела салон, сама писала стихи и играла на музыкальных инструментах.</div>
-                <div class="text__card">Зверек на руках у дамы имеет сложное символическое значение. <div class="woman__image-2 picture__image-2"><img src="static/img/woman/woman_2.webp" alt=""></div>
+                <div class="text__card">Зверек на руках у дамы имеет сложное символическое значение. <div class="woman__image-2 picture__image-2"><img src="static/img/1x1.png" data-src="static/img/woman/woman_2.webp" alt=""></div>
                 <div class="text__card">
                     Его греческое название <i>galee</i> схоже с фамилией Галлерани (<i>Gallerani</i>) - это отсылка к фамилии модели. Животное также является символом Лодовико Сфорца, прозванного современниками <q>Ermelino</q> или <q>горностай</q>, что отсылает к престижному Ордену горностая, кавалером которого он был; горностай бл изображен и в его гербе.
                 </div>
@@ -738,5 +742,6 @@ export function Woman(){
             </div>
         </div>
     </div>
-        `
+    </div>
+    `
 }

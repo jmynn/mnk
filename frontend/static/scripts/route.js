@@ -1,5 +1,6 @@
 import {Visitors, Filials, National, Woman, Main, Museum, Old, Lotto, Rembrandt, Gallery, ErrorPage} from "./pages.js"
 import {tab, ibgFunc, click, root, menu, menuBody, removeClassActive} from './resources.js'
+import {images} from './intersectionObserver.js'
 
 const route = event => {
     event = event || window.event
@@ -27,13 +28,14 @@ const handleLocation = async () => {
     root.innerHTML = html
 
     scrollTo(0, 0)
+    images() 
     ibgFunc()
-
+    
     if(document.body.classList.contains('active') && menu.classList.contains('active') && menuBody.classList.contains('active')) removeClassActive()
-
+    
     path === "/" ? click() : null
     path === "/visitors" ? tab() : null
-
+    
     document.querySelectorAll('[data-link]').forEach(item => item.onclick = route)
 }
 window.onpopstate = handleLocation

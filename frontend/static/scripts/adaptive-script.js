@@ -104,7 +104,6 @@ window.addEventListener('scroll', () => {
     if(window.pageYOffset >= 768 && !bool){
         bool = !bool
         addButtonToTop()
-        console.log('add');
         location.pathname === '/' ? null : addButtonToMainPage()
     }
     if(window.pageYOffset < 768 && bool){

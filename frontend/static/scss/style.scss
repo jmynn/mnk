@@ -208,6 +208,15 @@ q{
         flex: 0 0 33.333%;
     }
 }
+
+.error{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: $brown;
+}
 /* ---------!!--BODY--!!--------- */
 body{
 	// font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
