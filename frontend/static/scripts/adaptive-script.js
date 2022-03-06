@@ -87,7 +87,7 @@ const addButtonToMainPage = () => {
     link.onclick = route
     document.body.appendChild(link)
 }
-const removeButtonToMainPage = () => {
+export const removeButtonToMainPage = () => {
     const link = document.querySelector('.js-buttonToMainPage')
     document.body.removeChild(link)
 }

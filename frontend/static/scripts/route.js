@@ -1,6 +1,7 @@
 import {Visitors, Filials, National, Woman, Main, Museum, Old, Lotto, Rembrandt, Gallery, ErrorPage} from "./pages.js"
 import {tab, ibgFunc, click, root, menu, menuBody, removeClassActive} from './resources.js'
 import {images} from './intersectionObserver.js'
+import {removeButtonToMainPage} from './adaptive-script.js'
 
 const route = event => {
     event = event || window.event
@@ -33,7 +34,10 @@ const handleLocation = async () => {
     
     if(document.body.classList.contains('active') && menu.classList.contains('active') && menuBody.classList.contains('active')) removeClassActive()
     
-    path === "/" ? click() : null
+    if(path === "/") {
+        click()
+        if(document.querySelector('.js-buttonToMainPage')) removeButtonToMainPage()
+    }
     path === "/visitors" ? tab() : null
     
     document.querySelectorAll('[data-link]').forEach(item => item.onclick = route)
